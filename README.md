@@ -7,7 +7,7 @@ This repository is based on the research article titled "Analyzing COVID-19 Sent
 The aim of the study is to assess public sentiment—categorized as positive, negative, or neutral—by analyzing Twitter posts shared during the COVID-19 pandemic. Understanding these sentiments provides valuable insights for policymakers, health organizations, and researchers studying public behavior and communication during global crises.
 
 # Methodology
-##à Text Preprocessing
+### Text Preprocessing
 
 ### Auto-correction of misspellings
 
