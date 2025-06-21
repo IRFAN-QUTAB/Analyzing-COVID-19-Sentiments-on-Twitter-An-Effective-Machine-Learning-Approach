@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import seaborn as sns
 import numpy as np
 import pandas as pd
@@ -14,14 +8,8 @@ import logging
 from nltk.corpus import stopwords
 
 
-# In[ ]:
-
-
 df = pd.read_csv('Twitter_Dataset.csv', encoding= 'latin1')
 df
-
-
-# In[ ]:
 
 
 import re
@@ -101,19 +89,11 @@ print("Total Emoji Count:", sum_emoji_count)
 print("Total URL Count:", sum_url_count)
 
 
-# In[ ]:
-
-
 df.info()
-
-
-# In[ ]:
 
 
 df.describe()
 
-
-# In[ ]:
 
 
 print(df["Class"].value_counts())
@@ -888,50 +868,6 @@ plt.yticks(rotation = 50)
 plt.show()
 
 
-# In[ ]:
-
-
-unlabel = pd.read_csv('COVdataset unlabeled.csv', encoding='latin1')
-unlabel
-
-
-# In[ ]:
-
-
-unlabel["tweet"].apply(clean)
-
-
-# In[ ]:
-
-
-predicted = multinomial_log.predict(unlabel["tweet"])
-
-
-# In[ ]:
-
-
-predicted
-
-
-# In[ ]:
-
-
-unlabel["Class"] = [cls for cls in predicted]
-
-
-# In[ ]:
-
-
-unlabel
-
-
-# In[ ]:
-
-
-unlabel.to_csv("classified covid.csv",index=False)
-
-
-# In[ ]:
 
 
 
